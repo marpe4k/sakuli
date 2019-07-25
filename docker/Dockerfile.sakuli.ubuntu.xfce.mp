@@ -1,7 +1,7 @@
 # This Dockerfile is used to build a sakuli image based on Ubuntu
 
 #FROM consol/ubuntu-xfce-vnc:1.3.0
-FROM marpe4k/ubuntu-xfce-vnc:latest
+FROM marpe4k/ubuntu-xfce-vnc-firefox:latest
 
 MAINTAINER Tobias Schneck "tobias.schneck@consol.de"
 ENV REFRESHED_AT 2018-06-27
