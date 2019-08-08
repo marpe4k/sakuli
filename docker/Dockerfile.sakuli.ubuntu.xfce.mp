@@ -52,9 +52,13 @@ WORKDIR $SAKULI_ROOT
 # Install the $SAKULI_VERSION and create the example testsuite under $SAKULI_TEST_SUITE
 RUN $INST_SCRIPTS/sakuli.sh
 
+
+
 ### configure startup
 ADD ./sakuli-client/src/common/scripts $STARTUPDIR
 RUN $INST_SCRIPTS/set_user_permission.sh $STARTUPDIR
+ADD ./linux.xml /headless/sakuli/sahi/config/browser_types/linux.xml
+
 # use headless user for startup
 USER 1000
 
